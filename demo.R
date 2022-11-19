@@ -11,7 +11,11 @@ Options:
 [<arg4>]  Takes any value (this is an optional option)
 " -> doc
 
+main <- function(var) {
+  print(opt)
+  print(typeof(opt))
+}
+
 library(docopt)
 opt <- docopt(doc)
-print(opt)
-print(typeof(opt))
+main()
